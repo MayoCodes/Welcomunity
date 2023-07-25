@@ -40,7 +40,7 @@ $(function(){
             // do something after finishing, such as submitting the form
             var nationality = $("#nat").val();
             localStorage.setItem("nationality", nationality);
-            location.href="/main-pages/profileCard.html";
+            location.href = "../profileCard.html";
             }
     });
     
