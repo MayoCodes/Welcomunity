@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Education - List of Meetings</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css" />
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body>
+     <!-- ***** Header Area Start ***** -->
+     <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          Welcomunity
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li><a href="/form-wizard/index.html">Profile</a></li>
+                          <li><a href="meetingsfr.html">Maps</a></li>
+                          <li class="has-sub">
+                              <a href="#right-info">Help</a>
+                              <ul class="sub-menu">
+                                  <li><a href="index.html">What Can I Do?</a></li>
+                              </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="index.html">Support</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+<!-- ***** Header Area End ***** -->
+
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>Here are some useful locations for refugee aid</h6>
+          <h2>Maps </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="meetings-page" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div id="map" style="width: 100%; height: 1800px;"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    let center = [-119.417931, 36.778259]
+    const map = tt.map({
+        key: "sYx7ffH7ENQSOo8uqwFGjyOezpx3c2Xa",
+        container: "map",
+        center: center,
+        zoom: 3
+    })
+ 
+   map.on('load', () => {
+    var markerOne = new tt.Marker().setLngLat([-117.95599212147688, 33.771904785939824]).addTo(map);
+    var markerTwo = new tt.Marker().setLngLat([-122.25035611781142, 37.80906773511241]).addTo(map);
+    })
+    
+    </script>
+</body>
+
+
+  </body>
+
+</html>
